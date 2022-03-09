@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">Admin Dashboard</h1>
+
+        <!-- Form -->
+        <form id="postForm">
+
+            <!-- Article Number -->
+            <div class="form-group">
+                <label for="number">Article Number</label>
+                <input type="text" id="number" class="form-control"/>
+            </div>
+            <!-- Article Image URL -->
+            <div class="form-group mt-5">
+                <label for="image-url">Article Image URL</label>
+                <input type="url" id="imageUrl" class="form-control"/>
+            </div>
+
+            <!-- Article Publishing date -->
+            <div class="form-group mt-5">
+                <label for="date">Article Date of Publishing</label>
+                <input type="text" id="date" class="form-control"/>
+            </div>
+
+            <!-- Article Heading -->
+            <div class="form-group mt-5">
+                <label for="heading">Article Heading</label>
+                <input type="text" id="heading" class="form-control"/>
+            </div>
+
+            <!-- Article Content -->
+            <div class="form-group mt-5">
+                <label for="content">Article Content</label>
+                <input type="text" id="content" class="form-control"/>
+            </div>
+
+            <!-- Submit button -->
+            <input type="submit" value="Add Post" class="my-5 col-12">
+            <!-- Save button -->
+            <input type="submit" value="Save Post" class="my-5 col-12 d-none" id="saveBtn">
+        </form>
+
+        <!-- Post Display -->
+        <div class="row d-flex justify-content-center flex-wrap" id="postDiv"></div>
+
+    </div>
+
+    <script type="module" src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
